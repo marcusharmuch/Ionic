@@ -1,0 +1,23 @@
+<ion-view title="Detalhe do Carros">
+  <ion-content has-header="true" padding="true">
+    <div class="list card">
+      <div class="item item-divider">
+        <h2 style="text-align: center;">{{carro.titulo}}</h2>
+      </div>
+      <div class="item item-body">
+        <img class="full-image" src="{{carro.imagem}}">
+        <p>
+          {{carro.descricao}}
+        </p>
+      </div>
+      <div class="item">
+        <h3  style="text-align: center;">Valor: R$ {{carro.valor}}</h3>
+      </div>
+    </div>
+      <div class="list card">
+        <a class="item item-icon-left" href="tel: {{carro.telefoneContato}}"><i class="icon ion-android-call"></i>Ligar<p>{{carro.telefoneContato}}</p></a>
+        <a class="item item-icon-left" href="sms: {{carro.telefoneContato}}"><i class="icon ion-chatbox-working"></i>SMS<p>{{carro.telefoneContato}}</p></a>
+        <a class="item item-icon-left" href="mailto: {{carro.emailContato}}"><i class="icon ion-email"></i>Email<p>{{carro.emailContato}}</p></a>
+      </div>
+  </ion-content>
+</ion-view>
